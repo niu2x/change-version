@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type":"module",
+  "type": "module",
   "bin": {
     "change-version": "./src/main.js"
   },
@@ -19,5 +19,7 @@
   "bugs": {
     "url": "https://github.com/niu2x/change-version/issues"
   },
-  "homepage": "https://github.com/niu2x/change-version#readme"
+  "homepage": "https://github.com/niu2x/change-version#readme",
+  "devDependencies": {
+  }
 }
