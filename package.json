@@ -1,0 +1,23 @@
+{
+  "name": "change-version",
+  "version": "1.0.0",
+  "description": "change project version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type":"module",
+  "bin": {
+    "change-version": "./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niu2x/change-version.git"
+  },
+  "author": "niu2x",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niu2x/change-version/issues"
+  },
+  "homepage": "https://github.com/niu2x/change-version#readme"
+}
