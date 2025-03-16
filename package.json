@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/niu2x/change-version#readme",
   "dependencies": {
+    "antlr4": "^4.13.2",
     "commander": "^13.1.0"
   }
 }
