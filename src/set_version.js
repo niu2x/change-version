@@ -21,6 +21,6 @@ export default function setVersion(inputPath, newVersion, type, inPlace) {
 		process.stdout.write(output);
 	}
 	else {
-		
+		fs.writeFileSync(inputPath, output)
 	}
 } 
