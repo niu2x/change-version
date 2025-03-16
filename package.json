@@ -1,5 +1,5 @@
 {
-  "name": "change-version",
+  "name": "@niu2x/change-version",
   "version": "1.0.0",
   "description": "change project version",
   "main": "index.js",
