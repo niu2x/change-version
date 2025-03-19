@@ -10,7 +10,7 @@ const program = new Command();
 
 program
   .name('change-version')
-  .version("1.0.3")
+  .version("1.0.4")
   .option('-i, --in-place')
   .option('-v, --new-version <version>', "new version")
   .argument('type', 'project type')
