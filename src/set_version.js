@@ -12,6 +12,19 @@ function setNodePackageVersion(input, newVersion) {
   return JSON.stringify(input, null, "  ")
 }
 
+function setDoxygenVersion(input, newVersion) {
+  let lines = input.split(/\r\n|\n|\r/);
+  lines = lines.map((line, index) => {
+    if(line.startsWith("PROJECT_NUMBER")) {
+      return `PROJECT_NUMBER = ${newVersion}`
+    }
+    else {
+      return line
+    }
+  });
+  return lines.join('\n')
+}
+
 function setCMakeProjectVersion(input, newVersion) {
 
   class CMakeExecuter extends CMakeListener {
@@ -91,6 +104,7 @@ function setCMakeProjectVersion(input, newVersion) {
 }
 
 const delegate = {
+  "Doxygen": setDoxygenVersion,
   "Node": setNodePackageVersion,
   "CMake": setCMakeProjectVersion,
 }
