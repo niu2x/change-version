@@ -66,7 +66,7 @@ function setCMakeProjectVersion(input, newVersion) {
         let nextIsVersion = false;
         for (let i = ctx.start.tokenIndex; i <= ctx.stop.tokenIndex; i++) {
           if (nextIsVersion) {
-            this.text += `"${newVersion}" `;
+            this.text += `${newVersion} `;
             nextIsVersion = false;
           } else {
             this.text += this.tokens.tokens[i].text + " ";
